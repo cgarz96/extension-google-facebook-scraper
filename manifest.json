@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Scraper Friends Facebook",
+    "description":"Raspado automático y manual del listado de amigos de Facebook a csv",
+    "author":"Cristian Garzon",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.facebook.com/*"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ]
+  }
+  
